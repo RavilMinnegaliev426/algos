@@ -1,4 +1,4 @@
-import findSmallest from "../../00_other/findSmallest.js";
+import findSmallest from "./findSmallest.js";
 
 export default (array) => {
   let size = array.length;
