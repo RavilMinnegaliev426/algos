@@ -1,6 +1,6 @@
-import compareRandom from './compareRandom';
-import sequence from './sequence';
+import compareRandom from "./compareRandom.js";
+import sequence from "./sequence.js";
 
 export default (start, end) => {
-    return sequence(start, end).sort(compareRandom);
-}
+  return sequence(start, end).sort(compareRandom);
+};

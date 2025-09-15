@@ -1,21 +1,21 @@
-import addToQueue from './addToQueue';
-import personIsSeller from './personIsSeller';
+import addToQueue from "./addToQueue.js";
+import personIsSeller from "./personIsSeller.js";
 
 export default (searchQueue, graph, startPoint) => {
-    searchQueue = addToQueue(graph[startPoint], searchQueue);
-    let searched = [];
+  searchQueue = addToQueue(graph[startPoint], searchQueue);
+  let searched = [];
 
-    while(searchQueue.length !== 0) {
-        let person = searchQueue.shift();
-        if (searched.indexOf(person) === -1) {
-            if (personIsSeller(person)) {
-                return person + " is a mango seller";
-            } else {
-                searchQueue = addToQueue(graph[person], searchQueue);
-                searched.push(person);
-            }
-        }
+  while (searchQueue.length !== 0) {
+    let person = searchQueue.shift();
+    if (searched.indexOf(person) === -1) {
+      if (personIsSeller(person)) {
+        return person + " is a mango seller";
+      } else {
+        searchQueue = addToQueue(graph[person], searchQueue);
+        searched.push(person);
+      }
     }
+  }
 
-    return "nobody is a mango seller";
-}
+  return "nobody is a mango seller";
+};

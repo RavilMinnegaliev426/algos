@@ -1,4 +1,4 @@
-import findLowestCostWay from '../src/findLowestCostWay';
+import findLowestCostWay from "../src/findLowestCostWay.js";
 
 let graph = {};
 graph["start"] = {};

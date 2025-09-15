@@ -1,4 +1,4 @@
-import findMangoSeller from '../src/findMangoSeller';
+import findMangoSeller from "../src/findMangoSeller.js";
 
 /*
 let graph = {};

@@ -1,4 +1,4 @@
-import checkVoter from '../src/vote';
+import checkVoter from "../src/vote.js";
 
 let voted = {};
 

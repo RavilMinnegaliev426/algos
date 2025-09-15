@@ -1,7 +1,8 @@
-//import countdown from '../source/countdown';
-//import factorial from '../source/factorial';
-//import sum from '../source/sum';
-//import count from '../source/count';
+//import countdown from '../src/countdown.js';
+//import factorial from '../src/factorial.js';
+//import sum from '../src/sum.js';
+//import count from '../src/count.js';
+import max from "../../00_other/max.js";
 
 const list = [4, 6, 2];
 console.log(max(list));
